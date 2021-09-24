@@ -1,0 +1,680 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vector volume music player</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="mediaqueries.css">
+        <script src="https://kit.fontawesome.com/03d17cf1b0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navigation-bar">
+            <!-- logo and title of the page -->
+            <div class="title-combo">
+                <div class="website-logo">
+                    <img src="media/1621522929047.png">
+                </div>
+                <div class="website-name">
+                    <h1>
+                        Vector Volume
+                    </h1>
+                    <h4>
+                        Music Player
+                    </h4>
+                </div>
+            </div>
+            <!-- favourites text -->
+            <div class="favs">
+                <h4>
+                    Favourites
+                </h4>
+            </div>
+            <!-- search bar -->
+            <div class="search-bar">
+                <div>
+                    <!--search icon -->
+                    <i class="fas fa-search search-ico"></i>
+                </div>
+                <input type="text" name="search" placeholder="Search">
+                <div>
+                    <!-- mic icon -->
+                    <i class="fas fa-microphone mic-ico"></i>
+                </div>
+            </div>
+            <!-- notification bell -->
+            <div class="notification-bell">
+                <i class="fas fa-bell"></i>
+    
+            </div>
+            <!-- user profile picture -->
+            <div class="profile-picture">
+                <i class="far fa-user"></i>
+            </div>
+        </nav>
+        <main>
+            <!--here begins the main part of the page with the first aside section which is of left side-->
+            <aside class="aside section-1">
+                <!-- this is for the carousel -->
+                <div class="outer-carousel">
+                    <div class="carousel">
+                        <!-- the 3 images in the carousel -->
+                        <img src="media/carousel/sliderimage1.jpg">
+                        <img src="media/carousel/sliderimage2.jpg">
+                        <img src="media/carousel/sliderimage4.jpg">
+                    </div>
+                </div>
+                <!--Greatest hits section starts-->
+                <!--I was about to make a latest release section at first-->
+                <!--but then made a greatest hit section, so the names of the classes are unchanged-->>
+                <div class="latest-release">
+                    <h1 style="margin-bottom: 12px;">
+                        Greatest Hits
+                    </h1>
+                    <!-- this is the content of the greatest hits section -->
+                    <!-- it will contain the "cards" -->
+                    <div class="latest-release-content">
+                        <!-- first card -->
+                        <div class="card">
+                            <div>
+                                <!-- image corresponding to the card -->
+                                <img src="media/latest english/killshot.png">
+                                <!-- play button, which will be shown on hover on the card image -->
+                                <div class="play-button">
+                                    <i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <!-- it will contain the name and date of release of the song -->
+                            <div class="song-description">
+                                <h3>
+                                    Killshot
+                                </h3>
+                                <p>
+                                    Eminem
+                                </p>
+                            </div>
+                            <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+                            <div class="options">
+                                <label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox">
+                                <div class="latest-release-dropdown">
+                                    <div class="drop-item">
+                                        <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                        <p><i class="fas fa-play-circle"></i> <a href="singleartistplaylist.html">Play
+                                                Now</a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-music"></i> Add to playlist</p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                    </div>
+                                </div>
+                                <!-- duration of the song -->
+                                <p>
+                                    4:44
+                                </p>
+                            </div>
+                        </div>
+                        <!-- second card -->
+                        <div class="card">
+                            <div>
+                                <img src="media/latest english/Highwaytohell.png">
+                                <div class="play-button">
+                                    <i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="song-description">
+                                <h3>
+                                    Highway To Hell
+                                </h3>
+                                <p>
+                                    AC/DC
+                                </p>
+                            </div>
+                            <div class="options">
+                                <label for="latest-release-checkbox2"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox2">
+                                <div class="latest-release-dropdown">
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-play-circle"></i> <a href="singleartistplaylist.html">Play
+                                                Now</a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-music"></i> Add to playlist</p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    4:30
+                                </p>
+                            </div>
+                        </div>
+                        <!-- third card -->
+                        <div class="card">
+                            <div>
+                                <img src="media/latest english/comfortablyNumb.png">
+                                <div class="play-button">
+                                    <i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="song-description">
+                                <h3>
+                                    Comfortably Numb
+                                </h3>
+                                <p>
+                                    Pink Floyd
+                                </p>
+                            </div>
+                            <div class="options">
+                                <label for="latest-release-checkbox3"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox3">
+                                <div class="latest-release-dropdown">
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-play-circle"></i> <a href="singleartistplaylist.html">Play
+                                                Now</a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-music"></i> Add to playlist</p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    5:05
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fourth card -->
+                        <div class="card">
+                            <div>
+                                <img src="media/latest english/Faded.png">
+                                <div class="play-button">
+                                    <i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="song-description">
+                                <h3>
+                                    Faded
+                                </h3>
+                                <p>
+                                    Alan Walker
+                                </p>
+                            </div>
+                            <div class="options">
+                                <label for="latest-release-checkbox4"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox4">
+                                <div class="latest-release-dropdown">
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-play-circle"></i> <a href="singleartistplaylist.html">Play
+                                                Now</a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-music"></i> Add to playlist</p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    3:44
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fifth card -->
+                        <div class="card">
+                            <div>
+                                <img src="media/latest english/Rap_God.png">
+                                <div class="play-button">
+                                    <i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="song-description">
+                                <h3>
+                                    Rap God
+                                </h3>
+                                <p>
+                                    Eminem
+                                </p>
+                            </div>
+                            <div class="options">
+                                <label for="latest-release-checkbox5"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox5">
+                                <div class="latest-release-dropdown">
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-play-circle"></i> <a href="singleartistplaylist.html">Play
+                                                Now</a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-music"></i> Add to playlist</p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    5:10
+                                </p>
+                            </div>
+                        </div>
+                        <!-- sixth card -->
+                        <div class="card">
+                            <div>
+                                <img src="media/latest english/TheNights.png">
+                                <div class="play-button">
+                                    <i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="song-description">
+                                <h3>
+                                    The Nights
+                                </h3>
+                                <p>
+                                    Avicci
+                                </p>
+                            </div>
+                            <div class="options">
+                                <label for="latest-release-checkbox6"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox6">
+                                <div class="latest-release-dropdown">
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-play-circle"></i> <a href="singleartistplaylist.html">Play
+                                                Now</a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-music"></i> Add to playlist</p>
+                                    </div>
+                                    <hr>
+                                    <div class="drop-item">
+                                        <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    4:00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-artists">
+                    <!-- the heading of popular artists section -->
+                    <h1 style="margin-bottom: 12px;">
+                        Popular Artists
+                    </h1>
+                    <!-- the content of the popular artists section -->
+                    <div class="popular-artist-content">
+                        <!-- if user clicks on any one artist, it will redirect the user to the second page -->
+                        <!-- first artist -->
+                        <a href="singleartistplaylist.html">
+                            <div>
+                                <img src="media/popular artists/Eminem.JPG.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>
+                                    Eminem
+                                </p>
+                            </div>
+                        </a>
+                        <!-- second artist -->
+                        <a href="singleartistplaylist.html">
+                            <div>
+                                <img src="media/popular artists/Coldplay.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>
+                                    Coldplay
+                                </p>
+                            </div>
+                        </a>
+                        <!-- third artist -->
+                        <a href="singleartistplaylist.html">
+                            <div>
+                                <img src="media/popular artists/Ed-Sheeran.jpg" width="15vw" height="10vw">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>
+                                    Ed Sheeran
+                                </p>
+                            </div>
+                        </a>
+                        <!-- fourth artist -->
+                        <a href="singleartistplaylist.html">
+                            <div>
+                                <img src="media/popular artists/acdc.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>
+                                    AC DC
+                                </p>
+                            </div>
+                        </a>
+                        <!-- fifth artist -->
+                        <a href="singleartistplaylist.html">
+                            <div>
+                                <img src="media/popular artists/avicci.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>
+                                    Avicci
+                                </p>
+                            </div>
+                        </a>
+                        <!-- 6th artist -->
+                        <a href="singleartistplaylist.html">
+                            <div>
+                                <img src="media/popular artists/Led_zeppelin.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>
+                                    Led Zeppelin
+                                </p>
+                            </div>
+                        </a><!-- 7th artist -->
+                        <a href="singleartistplaylist.html">
+                            <div>
+                                <img src="media/popular artists/music-pink-floyd.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>
+                                    Pink Floyd
+                                </p>
+                            </div>
+                        </a><!-- 8th artist -->
+                        <a href="singleartistplaylist.html">
+                            <div>
+                                <img src="media/popular artists/alanwalker.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>
+                                    Alan Walker
+                                </p>
+                            </div>
+                        </a>
+                        <!-- 9th artist -->
+                        <a href="singleartistplaylist.html">
+                            <div>
+                                <img src="media/popular artists/Divine.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>
+                                    Divine
+                                </p>
+                            </div>
+                        </a>
+                        <!-- 10th artist -->
+                        <a href="singleartistplaylist.html">
+                            <div>
+                                <img src="media/popular artists/ARRehman.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>
+                                    A.R Rahman
+                                </p>
+                            </div>
+                        </a>
+                        <!--11th artist-->
+                        <a href="singleartistplaylist.html">
+                            <div>
+                                <img src="media/popular artists/Onedirection.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>
+                                    One Direction
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </aside> 
+            <!-- one aside section is complete -->
+        <!-- this is the label for the more button which will appear when browser size is reduced-->
+        <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+        <input type="checkbox" id="more">
+        <!-- here starts the section 2 of the page -->
+        <aside class="aside section-2">
+            <!-- this is the section heading part-->
+            <div class="heading">
+                <h1>Playlist</h1>
+                <h4>
+                    <a href="#queue-option-box">Queue <i class="fas fa-chevron-circle-down"></i></a>
+                </h4>
+            </div>
+            <!-- this is the queue box which will be shown when the user clicks on the Queue button -->
+            <div class="queue-options" id="queue-option-box">
+                <p><a href style="color:#007bff; font-weight:bolder;">Playlists</a></p>
+                <hr>
+                <p><a href style="color:#007bff; font-weight:bolder;">Favourite songs</a></p>
+                <hr>
+                <p><a href="#" style="color:red; font-weight:bolder;">Close</a></p>
+            </div>
+            <!-- this is the content of the playlist-->
+            <div class="playlist-content">
+                <!-- first playlist item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <!-- index -->
+                        <div style="margin-right:4px;">
+                            01
+                        </div>
+                        <div class="coverer">
+                            <!-- coverer class is for those items which when hovered will show an effect -->
+                            <img src="media/playlist/rockme.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!-- name and author of the song -->
+                        <div>
+                            <div>
+                                Rock Me
+                            </div>
+                            <p>
+                                One Direction
+                            </p>
+                        </div>
+                    </div>
+                    <!-- like button -->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- second playlist item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            02
+                        </div>
+                        <div class="coverer">
+                            <img src="media/playlist/HoldMyHand.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Hold My Hand
+                            </div>
+                            <p>
+                                Michael Jackson
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- third playlist item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            03
+                        </div>
+                        <div class="coverer">
+                            <img src="media/playlist/stairwaytoheaven.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Stairway To Heaven
+                            </div>
+                            <p>
+                                Led Zeppelin
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- fourth playlist item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            04
+                        </div>
+                        <div class="coverer">
+                            <img src="media/playlist/Counting_stars.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Counting Stars
+                            </div>
+                            <p>
+                                One Republic
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- fifth playlist item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            05
+                        </div>
+                        <div class="coverer">
+                            <img src="media/playlist/MGKInvincible.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                Invincible
+                            </div>
+                            <p>
+                                MGK
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </aside>   
+        </main>
+        <footer class="hide">
+            <div class="active-song-description">
+                <!-- song image -->
+                <div id="song-image">
+                    <img src="media/active song/Larger_than_Life.jpg">
+                </div>
+                <!-- song name and author -->
+                <div class="song-desc">
+                    <div>
+                        Larger Than Life
+                    </div>
+                    <div>
+                        Backstreet Boys
+                    </div>
+                    <!-- heart icon and ban icon -->
+                </div>
+                <div class="heart-and-ban-icon">
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fas fa-ban"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- these are the main player controls -->
+            <div class="player">
+                <div class="controls">
+                    <div><i class="fas fa-random"></i></div>
+                    <div><i class="fas fa-step-backward"></i></div>
+                    <div><i class="fas fa-pause-circle"></i></div>
+                    <div><i class="fas fa-step-forward"></i></div>
+                    <div><i class="fas fa-redo"></i></div>
+                </div>
+                <!-- this is the slider -->
+                <div id="slider">
+                    <!-- current time -->
+                    <div class="time">
+                        0:02
+                    </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                    </div>
+                    <!-- total time -->
+                    <div class="time">
+                        4:44
+                    </div>
+                </div>
+            </div>
+            <!-- other icons including the volume slider and all -->
+            <div class="extras">
+                <div>
+                    <i class="fas fa-list-ul"></i>
+                </div>
+                <div>
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <div>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="slidecontainer" style="width:30%;">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+                </div>
+                <div>
+                    <i class="fas fa-expand-alt"></i>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
